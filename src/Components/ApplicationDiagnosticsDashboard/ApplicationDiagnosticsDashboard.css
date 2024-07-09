@@ -1,0 +1,62 @@
+.container {
+    width: 100%; /* Ensure the container takes full width of its parent */
+    max-width: 600px; /* Example: limit maximum width if needed */
+    margin: 0 auto; /* Center the container horizontally */
+
+    .header {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        border: 1px solid rgb(195, 195, 195);
+        padding: 16px; /* Add padding for spacing */
+
+        .title {
+            text-align: center;
+        }
+
+        .fault {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 35px;
+                height: 35px;
+                border: 2px rgb(191, 0, 0) solid;
+                font-size: x-large;
+                border-radius: 50%;
+                color: rgb(191, 0, 0);
+            }
+        }
+
+        .efficiency {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+                width: 10px; /* Adjust size as needed */
+                height: 10px; /* Adjust size as needed */
+                background-color: yellow;
+                border-radius: 50%;
+                margin: 7px;
+            }
+        }
+    }
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .header {
+        padding: 12px; /* Adjust padding for smaller screens */
+    }
+}

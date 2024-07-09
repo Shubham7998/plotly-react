@@ -1,0 +1,34 @@
+.navbar{
+    display: flex;
+    font-size: medium;
+    /* gap: 2%; */
+    justify-content: flex-end;
+    background-color: black;
+    color: rgb(229, 226, 226);
+    div{
+        margin: 1.4% 1%;
+        cursor: pointer;
+        user-select: none;
+    }
+    .waffle{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        margin-top: 1.4%;
+        padding-top: 5px;
+        .row{
+            display: flex;
+            gap: 2px;
+        }
+    }
+    .gmail-pic{
+        background-color: #0e70e0;
+        border-radius: 50%;
+    }
+}
+.circle-icon{
+    height: 4px;
+    width: 4px;
+    background-color: white;
+    border-radius: 50%;
+}

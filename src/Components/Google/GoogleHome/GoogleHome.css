@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+    user-select: none;
+    background-color: black;
+}
+
+.container {
+    height: 100%;
+    margin-bottom: auto;
+
+    .google {
+        color: #EEE;
+        text-align: center;
+        font-weight: 500;
+        font-size: 81.2px;
+        margin: 30px;
+    }
+
+    .search-block {
+        display: flex;
+        border-radius: 10cqmax;
+        width: 561px;
+        height: 50px;
+        margin: auto;
+        background-color: #fff;
+
+        .search-icon {
+            display: flex;
+            width: 30px;
+            padding: 15px 20px;
+
+            .svg {
+                fill: grey;
+            }
+        }
+
+        .search-bar {
+            width: 450px;
+            border: none;
+            background-color: #fff;
+            padding: 0px 0px;
+            font-size: x-large;
+            outline: none;
+            size: 10px;
+        }
+
+        .search-bar::-webkit-input-placeholder {
+            font-size: large;
+        }
+
+        .search-bar:focus {
+            border: 1px solid white;
+        }
+
+        img {
+            margin-right: 10px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+    }
+
+    .body {
+        width: 561px;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        margin-top: 40px;
+
+        .shortcuts {
+            background-color: black;
+
+            .row {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                .col {
+                    cursor: pointer;
+                    margin: 0px;
+                    padding: 15px 25px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    img {
+                        background-color: rgba(230, 230, 230, 0.3);
+                        border-radius: 50%;
+                        border: 0px solid grey;
+                        padding: 15px;
+                    }
+
+                    h6 {
+                        margin: 0px;
+                        font-size: large;
+                        font-weight: normal;
+                        text-align: center;
+                        color: white;
+                    }
+                }
+
+                .col:hover {
+                    background-color: rgba(230, 230, 230, 0.3);
+                }
+            }
+        }
+    }
+}
